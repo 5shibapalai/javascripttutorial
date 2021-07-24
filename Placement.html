@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/Javascript.png" />
+  </head>
+  <body>
+    <header class="Header">
+      <img src="./img/logo.png" alt="logo" class="Header__logo" />
+      <h2 class="Header__heading">Javascript Tutorial</h2>
+    </header>
+    <nav class="Sidebar">
+      <div>
+        <ul>
+          <li>
+            <a href="intro.html" class="Sidebar__link">Introduction</a>
+          </li>
+          <li>
+            <a href="syntax.html" class="Sidebar__link">Syntax</a>
+          </li>
+          <li class="active">
+            <a href="Placement.html" class="Sidebar__link">Placement</a>
+          </li>
+          <li>
+            <a href="Variables.html" class="Sidebar__link">Variables</a>
+          </li>
+          <li>
+            <a href="Operators.html" class="Sidebar__link">Operators</a>
+          </li>
+          <li>
+            <a href="Functions.html" class="Sidebar__link">Functions</a>
+          </li>
+          <h1 class="H1">OBJECTS</h1>
+          <li>
+            <a href="Objects.html" class="Sidebar__link">Objects</a>
+          </li>
+          <li>
+            <a href="Number.html" class="Sidebar__link">Number</a>
+          </li>
+          <li>
+            <a href="Boolean.html" class="Sidebar__link">Boolean</a>
+          </li>
+          <li>
+            <a href="Strings.html" class="Sidebar__link">Strings</a>
+          </li>
+          <li>
+            <a href="Arrays.html" class="Sidebar__link">Arrays</a>
+          </li>
+          <h1 class="H1">Javascript Useful Resources</h1>
+          <li>
+            <a href="Quizzes.html" class="Sidebar__link">Quizzes</a>
+          </li>
+          <li>
+            <a href="Assignment.html" class="Sidebar__link">Assignment</a>
+          </li>
+          <li>
+            <a href="NewTopics.html" class="Sidebar__link">NewTopics</a>
+          </li>
+          <ul>
+    </nav>
+    <nav class="Navbar">
+      <a href="index.html" class="Navbar__text">Home</a>
+      <a href="#" class="Navbar__text">About Us</a>
+      <a href="intro.html" class="Navbar__text active">Javascript Tutorial</a>
+    </nav>
+    <main class="Container">
+      <h1>Placement</h1>
+      <div class="Container__ButtonsDiv">
+        <a href="syntax.html" class="Container__Button">Previous</a>
+        <a href="Variables.html" class="Container__Button">Next</a>
+      </div>
+      <div>
+        <ul><li>There is a flexibility given to include JavaScript code anywhere in an HTML document. However the most preferred ways to include JavaScript in an HTML file are as follows −</li>
+
+<li>Script in &lt;head&gt;...&lt;/head&gt; section.</li>
+
+<li>Script in &lt;body&gt;...&lt;/body&gt; section.</li>
+
+<li>Script in &lt;body&gt;...&lt;/body&gt; and &lt;head&gt;...&lt;/head&gt; sections.&lt;/li>
+
+<li>Script in an external file and then include in &lt;head&gt;...&lt;/head&gt; section.</li>
+
+<li>In the following section, we will see how we can place JavaScript in an HTML file in different ways.</li>
+</ul>
+<h2>JavaScript in &lt;head&gt;...&lt;/head&gt; section</h2>
+<p>If you want to have a script run on some event, such as when a user clicks somewhere, then you will place that script in the head as follows −</p>
+      </div>
+  <div class="Container__ExampleCode">
+  <pre> &lt;html&gt;
+   &lt;head&gt;      
+      &lt;script type = "text/javascript"&gt;
+         &lt;!--
+            function sayHello() {
+               alert("Hello World")
+            }
+         //--&gt;
+      &lt;/script&gt;     
+   &lt;/head&gt;
+   
+   &lt;body>
+      &lt;input type = "button" onclick = "sayHello()" value = "Say Hello"/&gt;
+   &lt;/body&gt;  
+&lt;/html&gt;</pre> 
+    
+  </div>
+  <div><p>This code will produce the following results −</p></div>
+   <div class="Container__ExampleCode">
+     <p>Click here for the result</p>
+     <input type="button" onclick="sayHello()" value="Say Hello">
+   </div>
+<div>
+  <h2>JavaScript in &lt;body&gt;...&lt;/body&gt; section</h2>
+  <p>If you need a script to run as the page loads so that the script generates content in the page, then the script goes in the &lt;body&gt; portion of the document. In this case, you would not have any function defined using JavaScript. Take a look at the following code.</p><br>
+</div>
+<div class="Container__ExampleCode">
+ <pre> &lt;html&gt;
+   &lt;head&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;script type = "text/javascript"&gt;
+         &lt;!--
+            document.write("Hello World")
+         //--&gt;
+      &lt;/script&gt;
+      
+      &lt;p&gt;This is web page body &lt;/p&gt;<br>
+   &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</div>
+<p>This code will produce the following results −</p><br>
+<div class="Container__ExampleCode">
+  <p>Hello World</p><br>
+<p>This is web page body</p><br>
+</div>
+<h2>JavaScript in &lt;body&gt; and &lt;head&gt; Sections</h2><br>
+  <p>You can put your JavaScript code in &lt;head&gt; and &lt;body&gt; section altogether as follows −</p><br>
+
+<div class="Container__ExampleCode"> 
+<pre> &lt;html&gt;
+   &lt;head&gt;      
+      &lt;script type = "text/javascript"&gt;
+         &lt;!--
+            function sayHello() {
+               alert("Hello World")
+            }
+         //--&gt;
+      &lt;/script&gt;     
+   &lt;/head&gt;
+    &lt;body&gt;
+      &lt;script type = "text/javascript"&gt;
+         &lt;!--
+            document.write("Hello World")
+         //--&gt;
+      &lt;/script&gt;
+      
+       &lt;input type = "button" onclick = "sayHello()" value = "Say Hello"/&gt;
+   &lt;/body&gt;
+&lt;/html&gt;
+</div>
+<p>This code will produce the following result −</p>
+<div class="Container__ExampleCode">
+  <p>Hello World</p>
+  <input type="button" onclick="sayHello()" value="Say Hello">
+</div>
+      </main>
+  <footer class="Footer">
+        <p>
+             This Tutorial is made By Shiba sundar palai,Shreetom Bagh and Mohanta soumitra shubhankar. This is only for the purpose of submitting as an assignment to Our proffessor who had given this task to us. The use of this tutorial for any other purposes is completely prohibited.
+        </p>
+        <p>&#169; All Rights reserved</p>
+    </footer>
+  </body>
+</html>

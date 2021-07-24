@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/Javascript.png" />
+  </head>
+  <body>
+    <header class="Header">
+      <img src="./img/logo.png" alt="logo" class="Header__logo" />
+      <h2 class="Header__heading">Javascript Tutorial</h2>
+    </header>
+    <nav class="Sidebar">
+      <div>
+        <ul>
+          <li>
+            <a href="intro.html" class="Sidebar__link">Introduction</a>
+          </li>
+          <li>
+            <a href="syntax.html" class="Sidebar__link">Syntax</a>
+          </li>
+          <li>
+            <a href="Placement.html" class="Sidebar__link">Placement</a>
+          </li>
+          <li>
+            <a href="Variables.html" class="Sidebar__link">Variables</a>
+          </li>
+          <li class="active">
+            <a href="Operators.html" class="Sidebar__link">Operators</a>
+          </li>
+          <li>
+            <a href="Functions.html" class="Sidebar__link">Functions</a>
+          </li>
+          <h1 class="H1">OBJECTS</h1>
+          <li>
+            <a href="Objects.html" class="Sidebar__link">Objects</a>
+          </li>
+          <li>
+            <a href="Number.html" class="Sidebar__link">Number</a>
+          </li>
+          <li>
+            <a href="Boolean.html" class="Sidebar__link">Boolean</a>
+          </li>
+          <li>
+            <a href="Strings.html" class="Sidebar__link">Strings</a>
+          </li>
+          <li>
+            <a href="Arrays.html" class="Sidebar__link">Arrays</a>
+          </li>
+          <h1 class="H1">Javascript Useful Resources</h1>
+          <li>
+            <a href="Quizzes.html" class="Sidebar__link">Quizzes</a>
+          </li>
+          <li>
+            <a href="Assignment.html" class="Sidebar__link">Assignment</a>
+          </li>
+          <li>
+            <a href="NewTopics.html" class="Sidebar__link">NewTopics</a>
+          </li>
+          <ul>
+    </nav>
+    <nav class="Navbar">
+      <a href="index.html" class="Navbar__text">Home</a>
+      <a href="#" class="Navbar__text">About Us</a>
+      <a href="intro.html" class="Navbar__text active">Html Tutorial</a>
+    </nav>
+    <main class="Container">
+      <h1>Operators</h1>
+      <div class="Container__ButtonsDiv">
+        <a href="Variables.html" class="Container__Button">Previous</a>
+        <a href="Functions.html" class="Container__Button">Next</a>
+      </div>
+      <div>
+        <h2>What is an Operator?</h2>
+<p>Let us take a simple expression 4 + 5 is equal to 9. Here 4 and 5 are called operands and ‘+’ is called the operator. JavaScript supports the following types of operators.</p>
+<ul>
+<li>Arithmetic Operators</li>
+<li>Comparison Operators</li>
+<li>Logical (or Relational) Operators</li>
+<li>Assignment Operators</li>
+<li>Conditional (or ternary) Operators</li>
+<li>Lets have a look on all operators one by one.</li>
+</ul>
+<p>Here is an example of arithematic operators</p><br>
+<p>JavaScript supports the following arithmetic operators −</p>
+
+<p>Assume variable A holds 10 and variable B holds 20, then −</p>
+<ul>
+  <li>+ (Addition)</li>
+  <li>- (Subtraction)</li>
+  <li> * (Multiplication)</li>
+  <li>/ (Division)</li>
+  <li>% (Modulus)</li>
+  <li>++ (Increment)</li>
+  <li>-- (Decrement)</li>
+</ul>
+      </div>
+      <h2>Example</h2>
+      <p>The following code shows how to use arithmetic operators in JavaScript.</p>
+      <div class="Container__ExampleCode">
+        <pre>
+          &lt;html&gt;
+   &lt;body&gt;
+   
+      &lt;script type = "text/javascript"&gt;
+         &lt;!--
+            var a = 33;
+            var b = 10;
+            var c = "Test";
+            var linebreak = "<br />";
+         
+            document.write("a + b = ");
+            result = a + b;
+            document.write(result);
+            document.write(linebreak);
+         
+            document.write("a - b = ");
+            result = a - b;
+            document.write(result);
+            document.write(linebreak);
+         
+            document.write("a / b = ");
+            result = a / b;
+            document.write(result);
+            document.write(linebreak);
+         
+            document.write("a % b = ");
+            result = a % b;
+            document.write(result);
+            document.write(linebreak);
+         
+            document.write("a + b + c = ");
+            result = a + b + c;
+            document.write(result);
+            document.write(linebreak);
+         
+            a = ++a;
+            document.write("++a = ");
+            result = ++a;
+            document.write(result);
+            document.write(linebreak);
+         
+            b = --b;
+            document.write("--b = ");
+            result = --b;
+            document.write(result);
+            document.write(linebreak);
+         //--&gt;
+      &lt;/script&gt;
+      
+      Set the variables to different values and then try...
+   &lt;/body&gt;
+&lt;/html&gt;
+        </pre>
+      </div>
+      <h2>Output</h2>
+      <div class="Container__ExampleCode">
+      <pre>a + b = 43
+a - b = 23
+a / b = 3.3
+a % b = 3
+a + b + c = 43Test
+++a = 35
+--b = 8
+Set the variables to different values and then try...;</pre>
+</div>
+</main>
+  <footer class="Footer">
+        <p>
+             This Tutorial is made By Shiba sundar palai,Shreetom Bagh and Mohanta soumitra shubhankar. This is only for the purpose of submitting as an assignment to Our proffessor who had given this task to us. The use of this tutorial for any other purposes is completely prohibited.
+        </p>
+        <p>&#169; All Rights reserved</p>
+    </footer>
+  </body>
+</html>
+

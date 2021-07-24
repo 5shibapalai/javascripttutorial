@@ -1,0 +1,270 @@
+:root {
+  --color-primary: #8fbc8f;
+  --color-primary-light: #333;
+  --color-primary-dark: #cdcecf;
+  --grey-light-1: #b22222;
+  --grey-light-3: #fdf5e6;
+  --grey-light-4: #dda0dd;
+  --grey-dark-1: #333;
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3); }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto auto 1fr auto; }
+
+.Homepage {
+  background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark));
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: repeat(4, 1fr); }
+  .Homepage div {
+    grid-column: 2/4;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .Homepage .Logo {
+    color: var(--grey-light-3);
+    font-size: 18em;
+    text-align: center; }
+  .Homepage__text {
+    color: #6b8e23;
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 4rem; }
+    .Homepage_text1{
+      color:maroon ;
+      font-size: 2em;
+    }
+    .Homepage_why_javascript{
+      color:#ff9966 ;
+      font-size: 1.5em;
+    }
+    .Homepage_Applications_Javascript{
+      color:#4d1a00  ;
+      font-size: 1.5em;
+    }
+  .Homepage a, .Homepage a:visited {
+    color: var(--grey-dark-1);
+    background-image: linear-gradient(to right bottom, var(--grey-light-4), var(--grey-light-1));
+    text-decoration: none;
+    padding: 2rem 4rem;
+    font-size: 2rem;
+    border: none;
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    border-radius: 100px; }
+  .Homepage a:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+  .Homepage a:active, .Homepage a:focus {
+    outline: none;
+    transform: translateY(-0.1rem);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+
+
+.H1{
+  font-size: 2.7rem;
+    margin-bottom: 1.2rem;
+    text-align: center;
+    color: #8b4513; 
+
+}
+
+
+    .Header {
+  grid-column: 1/-1;
+  grid-row: 1/2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .Header__logo {
+    width: 10%; }
+  .Header__heading {
+    font-size: 3rem;
+    margin-right: 5%;
+    color: var(--color-primary); }
+
+
+
+.Sidebar {
+  grid-column: 1/2;
+  grid-row: 3/5;
+  background-color: var(--grey-dark-1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .Sidebar ul {
+    font-size: 1.6rem;
+    margin-top: 3rem;
+    list-style: none; }
+    .Sidebar ul .active {
+      background-color: var(--color-primary); }
+  .Sidebar li {
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .Sidebar__link, .Sidebar__link:visited {
+    color: var(--grey-light-1);
+    text-decoration: none;
+    transition: all 0.2s; }
+  .Sidebar__link:hover {
+    transform: translateY(-10%) scale(1.1); }
+  .Sidebar h3 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--color-primary); }
+  .Sidebar__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .Sidebar__footer img {
+      width: 80%; }
+    .Sidebar__footer p {
+      font-size: 1.5rem;
+      color: var(--grey-light-1); }
+.Container {
+  grid-column: 2/-1;
+  grid-row: 3/4;
+  padding: 3rem;
+  background-color: var(--grey-light-3); }
+  .Container h1 {
+    font-size: 2.7rem;
+    margin-bottom: 1.2rem; }
+  .Container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.2rem; }
+    .Container h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.0rem; }
+  .Container p {
+    font-size: 1.5rem; }
+    .Container pre {
+    font-size: 1.5rem; }
+  .Container div {
+    margin-bottom: 3rem; }
+  .Container ul,
+  .Container ol {
+    padding: 0rem 1.5rem;
+    font-size: 1.5rem; }
+    .Container__ExampleCode {
+      background-color: #f4f2f2;
+      color: var(--grey-dark-1);
+      padding: 1.5rem;
+      font-size: 1.3rem;
+      margin-bottom: 0 !important; }
+      .Container__ExampleCode pre {
+        font-size: 1.3rem; }
+    .Container .codehighlighter {
+    background-color: var(--color-primary);
+    color: var(--grey-light-1);
+    padding: 3px 5px; }
+  .Container__ButtonsDiv {
+    display: flex;
+    justify-content: space-between; }
+  .Container__Button, .Container__Button:visited {
+    text-decoration: none;
+    padding: 1rem 2rem;
+    background-color: var(--color-primary);
+    color: var(--grey-light-1);
+    transition: all 0.3s;
+    font-size: 1.5rem;
+    border-radius: 3px; }
+  .Container__Button:hover {
+    transform: scale(1.1) translateY(-10%); }
+  .Container__Button:active {
+    transform: scale(1.1) translateY(3%); }
+
+
+
+.Navbar {
+  grid-column: 1/-1;
+  grid-row: 2/3;
+  background-image: linear-gradient(to left, var(--color-primary-light), var(--color-primary-dark));
+  padding: 1rem 2rem; }
+  .Navbar__text {
+    color: var(--grey-light-1);
+    text-decoration: none;
+    font-size: 1.4rem;
+    padding: 1rem 2rem; }
+  .Navbar .active {
+    color: var(--color-primary);
+    background-color: var(--grey-light-1); }
+
+  
+.Footer {
+  grid-column: 2/-1;
+  grid-row: 4/5;
+  background-image: linear-gradient(to right, var(--color-primary-light), var(--color-primary-dark));
+  color: var(--grey-light-1); }
+  .Footer p {
+    text-align: center;
+    font-size: 1.5rem; }
+
+.question{
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.answers {
+  margin-bottom: 20px;
+  text-align: left;
+  display: inline-block;
+}
+.answers label{
+  display: block;
+  margin-bottom: 10px;
+}
+button{
+  font-family: 'Work Sans', sans-serif;
+  font-size: 22px;
+  background-color: #279;
+  color: #fff;
+  border: 0px;
+  border-radius: 3px;
+  padding: 20px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+button:hover{
+  background-color: #38a;
+}
+
+
+
+
+
+.slide{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.active-slide{
+  opacity: 1;
+  z-index: 2;
+}
+.quiz-container{
+  position: relative;
+  height: 200px;
+  margin-top: 40px;
+}

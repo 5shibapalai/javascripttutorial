@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/Javascript.png" />
+  </head>
+  <body>
+    <header class="Header">
+      <img src="./img/logo.png" alt="logo" class="Header__logo" />
+      <h2 class="Header__heading">Javascript Tutorial</h2>
+    </header>
+    <nav class="Sidebar">
+      <div>
+        <ul>
+          <li>
+            <a href="intro.html" class="Sidebar__link">Introduction</a>
+          </li>
+          <li>
+            <a href="syntax.html" class="Sidebar__link">Syntax</a>
+          </li>
+          <li>
+            <a href="Placement.html" class="Sidebar__link">Placement</a>
+          </li>
+          <li>
+            <a href="Variables.html" class="Sidebar__link">Variables</a>
+          </li>
+          <li>
+            <a href="Operators.html" class="Sidebar__link">Operators</a>
+          </li>
+          <li class="active">
+            <a href="Functions.html" class="Sidebar__link">Functions</a>
+          </li>
+          <h1 class="H1">OBJECTS</h1>
+          <li>
+            <a href="Objects.html" class="Sidebar__link">Objects</a>
+          </li>
+          <li>
+            <a href="Number.html" class="Sidebar__link">Number</a>
+          </li>
+          <li>
+            <a href="Boolean.html" class="Sidebar__link">Boolean</a>
+          </li>
+          <li>
+            <a href="Strings.html" class="Sidebar__link">Strings</a>
+          </li>
+          <li>
+            <a href="Arrays.html" class="Sidebar__link">Arrays</a>
+          </li>
+          <h1 class="H1">Javascript Useful Resources</h1>
+          <li>
+            <a href="Quizzes.html" class="Sidebar__link">Quizzes</a>
+          </li>
+          <li>
+            <a href="Assignment.html" class="Sidebar__link">Assignment</a>
+          </li>
+          <li>
+            <a href="NewTopics.html" class="Sidebar__link">NewTopics</a>
+          </li>
+          <ul>
+    </nav>
+    <nav class="Navbar">
+      <a href="index.html" class="Navbar__text">Home</a>
+      <a href="#" class="Navbar__text">About Us</a>
+      <a href="intro.html" class="Navbar__text active">Javascript Tutorial</a>
+    </nav>
+    <main class="Container">
+      <h1>Functions</h1>
+      <div class="Container__ButtonsDiv">
+        <a href="Operators.html" class="Container__Button">Previous</a>
+        <a href="Objects.html" class="Container__Button">Next</a>
+      </div>
+      <div>
+        <p>A function is a group of reusable code which can be called anywhere in your program. This eliminates the need of writing the same code again and again. It helps programmers in writing modular codes. Functions allow a programmer to divide a big program into a number of small and manageable functions.</p><br>
+
+<p>Like any other advanced programming language, JavaScript also supports all the features necessary to write modular code using functions. You must have seen functions like alert() and write() in the earlier chapters. We were using these functions again and again, but they had been written in core JavaScript only once.</p><br>
+
+<p>JavaScript allows us to write our own functions as well. This section explains how to write your own functions in JavaScript.</p>
+      </div>
+     <h2>Function Definition</h2>
+     <p>Before we use a function, we need to define it. The most common way to define a function in JavaScript is by using the function keyword, followed by a unique function name, a list of parameters (that might be empty), and a statement block surrounded by curly braces.</p><br>
+     <h3>Syntax</h3>
+     <p>The basic syntax is shown here.</p>
+     <div class="Container__ExampleCode">
+       
+     <pre> &lt;script type = "text/javascript"&gt;
+   &lt;!--
+      function functionname(parameter-list) {
+         statements
+      }
+   //--&gt;
+&lt;/script&gt;</pre>
+     </div>
+     <h2>Calling a Function</h2>
+     <p>To invoke a function somewhere later in the script, you would simply need to write the name of that function as shown in the following code.</p>
+     <div class="Container__ExampleCode">
+     <pre>  &lt;html&gt;
+   &lt;head&gt;   
+      &lt;script type = "text/javascript"&gt;
+         function sayHello() {
+            document.write ("Hello there!");
+         }
+      &lt;/script&gt;
+      
+   &lt;/head&gt;
+   
+   &lt;body&gt;
+      &lt;p&gt;Click the following button to call the function&lt;/p&gt;     
+      &lt;form&gt;
+         &lt;input type = "button" onclick = "sayHello()" value = "Say Hello"&gt;
+      &lt;/form&gt;      
+      &lt;p&gt;Use different text in write method and then try...&lt;&lt;/p&gt;
+   &lt;/body&gt;
+&lt;/html&gt;&lt;&lt;&lt;/pre>
+     </div>
+     <div class="Container__ExampleCode">
+       <h2>Output</h2>
+       <p>Hello there!&lt;</p>
+     </div>
+     <h2>Function Parameters</h2>
+     <p>Till now, we have seen functions without parameters. But there is a facility to pass different parameters while calling a function. These passed parameters can be captured inside the function and any manipulation can be done over those parameters. A function can take multiple parameters separated by comma.</p><br>
+     <h3>Example</h3>
+     <p>Try the following example. We have modified our sayHello function here. Now it takes two parameters.</p>
+     <div class="Container__ExampleCode">
+       &lt;html&gt;
+ &lt;head&gt;  
+      &lt;script type = "text/javascript"&gt;
+         function sayHello(name, age) {
+            document.write (name + " is " + age + " years old.");
+         }
+      &lt;/script&gt;      
+   &lt;/head&gt;
+   
+   &lt;body&gt;
+      &lt;p&gt;Click the following button to call the function&lt;/p&gt;      
+      &lt;form&gt;
+         &lt;input type = "button" onclick = "sayHello('Zara', 7)" value = "Say Hello"&gt;
+      &lt;/form&gt;      
+      &lt;p&gt;Use different parameters inside the function and then try...&lt;/p&gt;
+   &lt;/body&gt;
+&lt;/html&gt;
+     </div>
+     <div class="Container__ExampleCode">
+       <h2>Output</h2>
+       <p>Zara is 7 years old.</p>
+     </div>
+   </main>
+   <footer class="Footer">
+        <p>
+             This Tutorial is made By Shiba sundar palai,Shreetom Bagh and Mohanta soumitra shubhankar. This is only for the purpose of submitting as an assignment to Our proffessor who had given this task to us. The use of this tutorial for any other purposes is completely prohibited.
+        </p>
+        <p>&#169; All Rights reserved</p>
+    </footer>
+  </body>
+</html>

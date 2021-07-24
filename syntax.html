@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/Javascript.png" />
+  </head>
+  <body>
+    <header class="Header">
+      <img src="./img/logo.png" alt="logo" class="Header__logo" />
+      <h2 class="Header__heading">Javascript Tutorial</h2>
+    </header>
+    <nav class="Sidebar">
+      <div>
+        <ul>
+          <li>
+            <a href="intro.html" class="Sidebar__link">Introduction</a>
+          </li>
+          <li class="active">
+            <a href="syntax.html" class="Sidebar__link">Syntax</a>
+          </li>
+          <li>
+            <a href="Placement.html" class="Sidebar__link">Placement</a>
+          </li>
+          <li>
+            <a href="Variables.html" class="Sidebar__link">Variables</a>
+          </li>
+          <li>
+            <a href="Operators.html" class="Sidebar__link">Operators</a>
+          </li>
+          <li>
+            <a href="Functions.html" class="Sidebar__link">Functions</a>
+          </li>
+          <h1 class="H1">OBJECTS</h1>
+          <li>
+            <a href="Objects.html" class="Sidebar__link">Objects</a>
+          </li>
+          <li>
+            <a href="Number.html" class="Sidebar__link">Number</a>
+          </li>
+          <li>
+            <a href="Boolean.html" class="Sidebar__link">Boolean</a>
+          </li>
+          <li>
+            <a href="Strings.html" class="Sidebar__link">Strings</a>
+          </li>
+          <li>
+            <a href="Arrays.html" class="Sidebar__link">Arrays</a>
+          </li>
+          <h1 class="H1">Javascript Useful Resources</h1>
+          <li>
+            <a href="Quizzes.html" class="Sidebar__link">Quizzes</a>
+          </li>
+          <li>
+            <a href="Assignment.html" class="Sidebar__link">Assignment</a>
+          </li>
+          <li>
+            <a href="NewTopics.html" class="Sidebar__link">NewTopics</a>
+          </li>
+          <ul>
+    </nav>
+    <nav class="Navbar">
+      <a href="index.html" class="Navbar__text">Home</a>
+      <a href="#" class="Navbar__text">About Us</a>
+      <a href="intro.html" class="Navbar__text active">Javascript Tutorial</a>
+    </nav>
+    <main class="Container">
+      <h1>Syntax</h1>
+      <div class="Container__ButtonsDiv">
+        <a href="intro.html" class="Container__Button">Previous</a>
+        <a href="Placement.html" class="Container__Button">Next</a>
+      </div>
+      <div>
+        <p>JavaScript can be implemented using JavaScript statements that are placed within the <code class="codehighlighter">&lt;script&gt;... &lt;/script&gt; </code>HTML tags in a web page.</p><br>
+
+<p>You can place the <code class="codehighlighter"> &lt;script&gt;</code> tags, containing your JavaScript, anywhere within your web page, but it is normally recommended that you should keep it within the <code class="codehighlighter"> &lt;head&gt;</code> tags.</p><br>
+
+<p>The <code class="codehighlighter"> &lt;script&gt;</code> tag alerts the browser program to start interpreting all the text between these tags as a script. A simple syntax of your JavaScript will appear as follows.</p><br>
+
+      </div>
+
+      <div class="Container__ExampleCode">
+        &lt;script ...&gt;<br>
+   JavaScript code<br>
+&lt;/script&gt;<br>
+</div>
+<div>
+ <P> The script tag takes two important attributes −</P><br>
+
+<P>Language − This attribute specifies what scripting language you are using. Typically, its value will be javascript. Although recent versions of HTML (and XHTML, its successor) have phased out the use of this attribute.</P><br>
+
+<P>Type − This attribute is what is now recommended to indicate the scripting language in use and its value should be set to "text/javascript".</P><br>
+
+<P>So your JavaScript segment will look like −</P><br>
+</div>
+<div class="Container__ExampleCode">
+  <p>&lt;script language = "javascript" type = "text/javascript"&gt;<br>
+   JavaScript code<br>
+&lt;/script&gt;<br></p>
+  </div>
+  <div>
+    <h2>Your First JavaScript Code</h2>
+    <p>Let us take a sample example to print out "Hello World". We added an optional HTML comment that surrounds our JavaScript code. This is to save our code from a browser that does not support JavaScript. The comment ends with a "//-->". Here "//" signifies a comment in JavaScript, so we add that to prevent a browser from reading the end of the HTML comment as a piece of JavaScript code. Next, we call a function document.write which writes a string into our HTML document.<p><br>
+
+<p>This function can be used to write text, HTML, or both. Take a look at the following code.</p><br>
+  </div>
+  <div class="Container__ExampleCode">
+  <p>&lt;html&gt;<br>
+   &lt;body&gt; <br> 
+          &lt;script language = "javascript" type = "text/javascript"&gt;<br>
+           &lt;!--<br>
+            document.write("Hello World!")<br>
+         //--&gt;<br>
+      &lt;/script&gt;  <br>    
+   &lt;/body&gt;<br>
+&lt;/html&gt;<br></p>
+  </div>
+  <p>This code will produce the following result −</p>
+   <div class="Container__ExampleCode">
+    <p>Hello World!</p></div>
+    </main>
+    <footer class="Footer">
+        <p>
+            This Tutorial is made By Shiba sundar palai,Shreetom Bagh and Mohanta soumitra shubhankar. This is only for the purpose of submitting as an assignment to Our proffessor who had given this task to us. The use of this tutorial for any other purposes is completely prohibited.
+        </p>
+        <p>&#169; All Rights reserved</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/Javascript.png" />
+  </head>
+  <body>
+    <header class="Header">
+      <img src="./img/logo.png" alt="logo" class="Header__logo" />
+      <h2 class="Header__heading">Javascript Tutorial</h2>
+    </header>
+    <nav class="Sidebar">
+      <div>
+        <ul>
+          <li>
+            <a href="intro.html" class="Sidebar__link">Introduction</a>
+          </li>
+          <li>
+            <a href="syntax.html" class="Sidebar__link">Syntax</a>
+          </li>
+          <li>
+            <a href="Placement.html" class="Sidebar__link">Placement</a>
+          </li>
+          <li>
+            <a href="Variables.html" class="Sidebar__link">Variables</a>
+          </li>
+          <li>
+            <a href="Operators.html" class="Sidebar__link">Operators</a>
+          </li>
+          <li>
+            <a href="Functions.html" class="Sidebar__link">Functions</a>
+          </li>
+          <h1 class="H1">OBJECTS</h1>
+          <li class="active">
+            <a href="Objects.html" class="Sidebar__link">Objects</a>
+          </li>
+          <li>
+            <a href="Number.html" class="Sidebar__link">Number</a>
+          </li>
+          <li>
+            <a href="Boolean.html" class="Sidebar__link">Boolean</a>
+          </li>
+          <li>
+            <a href="Strings.html" class="Sidebar__link">Strings</a>
+          </li>
+          <li>
+            <a href="Arrays.html" class="Sidebar__link">Arrays</a>
+          </li>
+          <h1 class="H1">Javascript Useful Resources</h1>
+          <li>
+            <a href="Quizzes.html" class="Sidebar__link">Quizzes</a>
+          </li>
+          <li>
+            <a href="Assignment.html" class="Sidebar__link">Assignment</a>
+          </li>
+          <li>
+            <a href="NewTopics.html" class="Sidebar__link">NewTopics</a>
+          </li>
+          <ul>
+    </nav>
+    <nav class="Navbar">
+      <a href="index.html" class="Navbar__text">Home</a>
+      <a href="#" class="Navbar__text">About Us</a>
+      <a href="intro.html" class="Navbar__text active">Javascript Tutorial</a>
+    </nav>
+    <main class="Container">
+      <h1>Objects</h1>
+      <div class="Container__ButtonsDiv">
+        <a href="Functions.html" class="Container__Button">Previous</a>
+        <a href="Number.html" class="Container__Button">Next</a>
+      </div>
+      <div>
+       <P>JavaScript is an Object Oriented Programming (OOP) language. A programming language can be called object-oriented if it provides four basic capabilities to developers −</P> 
+<ul>
+<li>Encapsulation − the capability to store related information, whether data or methods, together in an object.</li>
+
+<li>Aggregation − the capability to store one object inside another object.</li>
+
+<li>Inheritance − the capability of a class to rely upon another class (or number of classes) for some of its properties and methods.</li>
+
+<li>Polymorphism − the capability to write one function or method that works in a variety of different ways.</li>
+
+<li>Objects are composed of attributes. If an attribute contains a function, it is considered to be a method of the object, otherwise the attribute is considered a property.</li>
+</ul>
+      </div>
+<h2>Object Properties</h2>
+<p>Object properties can be any of the three primitive data types, or any of the abstract data types, such as another object. Object properties are usually variables that are used internally in the object's methods, but can also be globally visible variables that are used throughout the page.</p><br>
+
+<p>The syntax for adding a property to an object is −</p>
+<div class="Container__ExampleCode">
+  <p>objectName.objectProperty = propertyValue;</p>
+</div>
+<p>For example − The following code gets the document title using the "title" property of the document object.</p>
+<div class="Container__ExampleCode">
+  <p>var str = document.title;</p>
+</div>
+<h2>Object Methods</h2>
+<p>Methods are the functions that let the object do something or let something be done to it. There is a small difference between a function and a method – at a function is a standalone unit of statements and a method is attached to an object and can be referenced by the this keyword.</p><br>
+
+<p>Methods are useful for everything from displaying the contents of the object to the screen to performing complex mathematical operations on a group of local properties and parameters.</p><br>
+
+<p>For example − Following is a simple example to show how to use the write() method of document object to write any content on the document.</p><br>
+<div class="Container__ExampleCode">
+  <p>document.write("This is test");</p>
+</div>
+<h2>Example</h2>
+<div class="Container__ExampleCode">
+  <pre>
+    &lt;html&gt;
+   &lt;head&gt;
+      &lt;title&gt;User-defined objects&lt;/title&gt;     
+      &lt;script type = "text/javascript"&gt;
+         var book = new Object();   // Create the object
+         book.subject = "Perl";     // Assign properties to the object
+         book.author  = "Mohtashim";
+      &lt;/script&gt;      
+   &lt;/head&gt;
+   
+   &lt;body&gt;  
+      &lt;script type = "text/javascript"&gt;
+         document.write("Book name is : " + book.subject + "<br>");
+         document.write("Book author is : " + book.author + "<br>");
+      &lt;/script&gt;   
+   &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</div>
+<h2>Output</h2>
+<div class="Container__ExampleCode">
+  <p>Book name is : Perl <br>
+Book author is : Mohtashim</p>
+</div>
+</main>
+   <footer class="Footer">
+        <p>
+             This Tutorial is made By Shiba sundar palai,Shreetom Bagh and Mohanta soumitra shubhankar. This is only for the purpose of submitting as an assignment to Our proffessor who had given this task to us. The use of this tutorial for any other purposes is completely prohibited.
+        </p>
+        <p>&#169; All Rights reserved</p>
+    </footer>
+  </body>
+</html>
